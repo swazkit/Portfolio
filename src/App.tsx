@@ -1,6 +1,10 @@
 import { useState } from 'react'
 import './App.css'
 
+interface CustomStyleType {
+  [key: string]: number | string;
+}
+
 function App() {
 
   return (
@@ -21,24 +25,24 @@ function App() {
         
         <div className="bubbles">       
         <div className="bubbles">
-          <span style={{ '--i': 16 }}></span>
-          <span style={{ '--i': 14 }}></span>
-          <span style={{ '--i': 18 }}></span>                
-          <span style={{ '--i': 15 }}></span>
-          <span style={{ '--i': 18 }}></span>
-          <span style={{ '--i': 11 }}></span>
-          <span style={{ '--i': 18 }}></span>
-          <span style={{ '--i': 19 }}></span>
-          <span style={{ '--i': 13 }}></span>
-          <span style={{ '--i': 12 }}></span>
-          <span style={{ '--i': 15 }}></span>
-          <span style={{ '--i': 17 }}></span>
-          <span className="mbub" style={{ '--i': 12 }}></span>
-          <span className="mbub" style={{ '--i': 17 }}></span>
-          <span className="mbub" style={{ '--i': 14 }}></span>
-          <span className="mbub" style={{ '--i': 19 }}></span>
-          <span className="mbub" style={{ '--i': 12 }}></span>
-          <span className="mbub" style={{ '--i': 16 }}></span>
+          <span style={{ '--i': 16 } as CustomStyleType}></span>
+          <span style={{ '--i': 14 } as CustomStyleType}></span>
+          <span style={{ '--i': 18 } as CustomStyleType}></span>
+          <span style={{ '--i': 15 } as CustomStyleType}></span>
+          <span style={{ '--i': 18 } as CustomStyleType}></span>
+          <span style={{ '--i': 11 } as CustomStyleType}></span>
+          <span style={{ '--i': 18 } as CustomStyleType}></span>
+          <span style={{ '--i': 19 } as CustomStyleType}></span>
+          <span style={{ '--i': 13 } as CustomStyleType}></span>
+          <span style={{ '--i': 12 } as CustomStyleType}></span>
+          <span style={{ '--i': 15 } as CustomStyleType}></span>
+          <span style={{ '--i': 17 } as CustomStyleType}></span>
+          <span className="mbub" style={{ '--i': 12 } as CustomStyleType}></span>
+          <span className="mbub" style={{ '--i': 17 } as CustomStyleType}></span>
+          <span className="mbub" style={{ '--i': 14 } as CustomStyleType}></span>
+          <span className="mbub" style={{ '--i': 19 } as CustomStyleType}></span>
+          <span className="mbub" style={{ '--i': 12 } as CustomStyleType}></span>
+          <span className="mbub" style={{ '--i': 16 } as CustomStyleType}></span>
         </div>
               
         </div> 
@@ -137,7 +141,14 @@ function App() {
 }
 
 
-const ServiceCard = ({ icon, title, description }) => (
+interface ServiceCardProps {
+  icon: string;
+  title: string;
+  description: string;
+}
+
+
+const ServiceCard = ({ icon, title, description }: ServiceCardProps) => (
   <div className="card">
     <i className={`fa-solid ${icon}`}></i>
     <h3>{title}</h3>
@@ -145,7 +156,7 @@ const ServiceCard = ({ icon, title, description }) => (
   </div>
 );
 
-const SkillIcon = ({ icon }) => (
+const SkillIcon = ({ icon }: ServiceCardProps) => (
   <i className={`fa-brands ${icon}`}></i>
 );
 
