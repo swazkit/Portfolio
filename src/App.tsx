@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import './App.css'
 
 interface CustomStyleType {
@@ -143,8 +142,8 @@ function App() {
 
 interface ServiceCardProps {
   icon: string;
-  title: string;
-  description: string;
+  title?: string;
+  description?: string;
 }
 
 
@@ -169,7 +168,7 @@ const Footer = () => (
       <a href="https://github.com/swazkit"><i className="fa-brands fa-github"></i></a>
       <a href="mailto:swastikraychoudhuri@gmail.com"><i className="fa-solid fa-envelope"></i></a>
     </div>
-    <p className="copyright">© 2021 Swastik Ray Choudhuri - All rights reserved</p>
+    <p className="copyright">© 2024 Swastik Ray Choudhuri - All rights reserved</p>
   </footer>
 );
 
