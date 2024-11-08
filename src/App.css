@@ -682,32 +682,34 @@ img {
   color: #FFFFFF;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  padding: 50px;
 }
 
 .Portfolio > h1 {
   padding-block: 30px;
+  text-align: center;
 }
 
-.calculator {
-  background-color: #011f1f;
+.portfolio-slider {
+  height: 100rem;
   display: flex;
-  align-items: center;
-  color: #ffffff;
-  width: 100vw;
+
 }
 
-.calc-text {
-  padding-left: 60px;
-  font-size: 75px;
-  max-width: 500px;
+.portfolio-tile {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
 }
 
-.calc-text p {
-  color: #fcfc;
-  font-size: 18px;
-  line-height: 28px;
-  letter-spacing: 1px;
+.portfolio-img {
+  width: 500px;
+}
+
+.portfolio-info {
+  background-color: #191919;
+  padding: 20px;
+  line-height: 25px;
 }
 
 .port-btn {
