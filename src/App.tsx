@@ -1,6 +1,8 @@
 import './App.css'
 import PortfolioTiles from './component/PortfolioTiles.tsx';
 import CalculatorImage from './assets/Calculator.png'
+import Tenzies from './assets/Tenzies.png'
+import Bubble from "./assets/Bubble.io.png"
 
 interface CustomStyleType {
   [key: string]: number | string;
@@ -76,6 +78,8 @@ function App() {
           <h1>Portfolio</h1>
           <div className="portfolio-slider">
             <PortfolioTiles image={CalculatorImage} description="This is a sleek, responsive calculator built using HTML, CSS, and JavaScript. Designed with a focus on simplicity and usability, the calculator handles basic arithmetic operations like addition, subtraction, multiplication, and division." />
+            <PortfolioTiles image={Tenzies} description='Babla baba kurung kurungTenzies is a captivating dice-rolling game that challenges players to score points by forming valid combinations. This interactive web application is built with [insert technologies used' />
+            <PortfolioTiles image={Bubble} description="Explore the thrill of space exploration in this interactive canvas game! Navigate through a challenging asteroid field, collecting power-ups while avoiding collisions." />
           </div>
         </section>
 

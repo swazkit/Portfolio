@@ -691,19 +691,22 @@ img {
 }
 
 .portfolio-slider {
-  height: 100rem;
+  padding-block: 50px;
   display: flex;
-
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .portfolio-tile {
-  width: 500px;
+  width: 400px;
   display: flex;
   flex-direction: column;
 }
 
 .portfolio-img {
-  width: 500px;
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 .portfolio-info {
