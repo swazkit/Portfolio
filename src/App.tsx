@@ -26,7 +26,7 @@ function App() {
 
       <div className="hero">
         <div className="bubbles">
-          {[16, 14, 18, 15, 18, 11, 18, 19, 13, 12, 15, 17, 12, 17, 14, 19, 12, 16].map(i => (
+          {[10, 14, 18, 15, 18, 11, 18, 19, 13, 12, 15, 17, 12, 17, 14, 19, 12, 16].map(i => (
             <span key={i} style={{ '--i': i } as CustomStyleType}></span>
           ))}
         </div>
