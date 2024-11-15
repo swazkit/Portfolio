@@ -3,6 +3,8 @@ import PortfolioTiles from './component/PortfolioTiles.tsx';
 import CalculatorImage from './assets/Calculator.png'
 import Tenzies from './assets/Tenzies.png'
 import Bubble from "./assets/Bubble.io.png"
+import { FaDribbble } from "react-icons/fa";
+import { FaSquareBehance } from "react-icons/fa6";
 
 interface CustomStyleType {
   [key: string]: number | string;
@@ -77,9 +79,9 @@ function App() {
         <section className="Portfolio">
           <h1>Portfolio</h1>
           <div className="portfolio-slider">
-            <PortfolioTiles image={CalculatorImage} description="This is a sleek, responsive calculator built using HTML, CSS, and JavaScript. Designed with a focus on simplicity and usability, the calculator handles basic arithmetic operations like addition, subtraction, multiplication, and division." />
-            <PortfolioTiles image={Tenzies} description='Babla baba kurung kurungTenzies is a captivating dice-rolling game that challenges players to score points by forming valid combinations. This interactive web application is built with [insert technologies used' />
-            <PortfolioTiles image={Bubble} description="Explore the thrill of space exploration in this interactive canvas game! Navigate through a challenging asteroid field, collecting power-ups while avoiding collisions." />
+            <PortfolioTiles image={CalculatorImage} description="This is a sleek, responsive calculator built using HTML, CSS, and JavaScript. Designed with a focus on simplicity and usability, the calculator handles basic arithmetic operations like addition, subtraction, multiplication, and division." web="https://swazkit.github.io/Calculator/" git="https://github.com/swazkit/Calculator" />
+            <PortfolioTiles image={Tenzies} description='Tenzies is a captivating dice-rolling game that challenges players to score points by forming valid combinations. This interactive web application is built with [insert technologies used' web="https://tenzies-game-delta-seven.vercel.app/" git="https://github.com/swazkit/Tenzies-game" />
+            <PortfolioTiles image={Bubble} description="Explore the thrill of space exploration in this interactive canvas game! Navigate through a challenging asteroid field, collecting power-ups while avoiding collisions." web="https://swazkit.github.io/Canvas_game/" git="https://github.com/swazkit/Canvas_game" />
           </div>
         </section>
 
@@ -120,6 +122,8 @@ const Footer = () => (
       <a href="https://www.linkedin.com/in/swastik-ray-choudhuri/" aria-label="LinkedIn"><i className="fa-brands fa-linkedin-in"></i></a>
       <a href="https://github.com/swazkit" aria-label="GitHub"><i className="fa-brands fa-github"></i></a>
       <a href="mailto:swastikraychoudhuri@gmail.com" aria-label="Email"><i className="fa-solid fa-envelope"></i></a>
+      <a href="https://dribbble.com/Swaz002"><FaDribbble/></a>
+      <a href="https://www.behance.net/swaz"><FaSquareBehance/></a>
     </div>
     <p className="copyright">© 2024 Swastik Ray Choudhuri - All rights reserved</p>
   </footer>

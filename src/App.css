@@ -603,13 +603,14 @@ nav {
 
 
 .contact {
-  min-height: 12.5rem;
+  height: auto;
   background-color: #191919;
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding-block: 40px;
 }
 
 .contact h3 {
@@ -850,6 +851,10 @@ img {
   .calc-text {
       width: calc(100vw - 20px);
   }
+
+  .portfolio-tile {
+    margin-bottom: 50px;
+  }
 }
 
 
@@ -868,6 +873,7 @@ img {
 
 .portfolio-img {
   width: 100%;
+  height: 350px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
@@ -876,6 +882,7 @@ img {
   background-color: #191919;
   padding: 20px;
   line-height: 25px;
+  height: 175px;
 }
 
 @media (max-width: 600px) {
@@ -884,9 +891,43 @@ img {
   }
 
   .bubbles span {
-    transform: scale(0.8); /* Adjust the scale to fit better */
+    transform: scale(0.2); /* Adjust the scale to fit better */
     width: 15px;
     height: 15px;
   }
+
+  .portfolio-img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .portfolio-info {
+    height: auto;
+  }
+
+  .card {
+    height: auto;
+  }
+
+  .Slide > i {
+    width: 20px;
+  }
 }
 
+.port-buttons {
+  padding-top: 10px;
+  display: flex;
+  gap: 20px;
+}
+
+.port-buttons > a {
+  background-color: #393939;
+  padding: 15px;
+  border-radius: 50px;
+  display: flex;
+  transition: .5s;
+}
+
+.port-buttons > a:hover {
+  filter: drop-shadow(-1px 6px 10px #af1d90);
+}
