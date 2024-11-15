@@ -4,7 +4,8 @@ import CalculatorImage from './assets/Calculator.png'
 import Tenzies from './assets/Tenzies.png'
 import Bubble from "./assets/Bubble.io.png"
 import { FaDribbble } from "react-icons/fa";
-import { FaSquareBehance } from "react-icons/fa6";
+import { FaBehanceSquare } from "react-icons/fa";
+
 
 interface CustomStyleType {
   [key: string]: number | string;
@@ -123,7 +124,7 @@ const Footer = () => (
       <a href="https://github.com/swazkit" aria-label="GitHub"><i className="fa-brands fa-github"></i></a>
       <a href="mailto:swastikraychoudhuri@gmail.com" aria-label="Email"><i className="fa-solid fa-envelope"></i></a>
       <a href="https://dribbble.com/Swaz002"><FaDribbble/></a>
-      <a href="https://www.behance.net/swaz"><FaSquareBehance/></a>
+      <a href="https://www.behance.net/swaz"><FaBehanceSquare/></a>
     </div>
     <p className="copyright">© 2024 Swastik Ray Choudhuri - All rights reserved</p>
   </footer>
