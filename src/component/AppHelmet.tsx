@@ -18,8 +18,7 @@ function AppHelmet() {
         property="og:description"
         content="Explore Swaz's web development and design projects. Contact for collaborations!"
       />
-      <meta property="og:image" content="./src/assets/Thumbnail.png" />
-      <meta property="og:image" content="https://portfoliome-pied.vercel.app/assets/Thumbnail.png" />
+      <meta property="og:image" content="https://portfoliome-pied.vercel.app/ogp.png" />
       <meta property="og:type" content="website" />
 
       {/* Twitter Metadata */}
@@ -29,8 +28,8 @@ function AppHelmet() {
         name="twitter:description"
         content="Discover Swaz's creative web development projects and get inspired!"
       />
-      <meta name="twitter:image" content="https://portfoliome-pied.vercel.app/twitter-image.jpg" />
-      <meta name="twitter:creator" content="@yourTwitterHandle" />
+      <meta name="twitter:image" content="https://portfoliome-pied.vercel.app/ogp.png" />
+      <meta name="twitter:creator" content="@" />
 
       {/* Mobile Optimization */}
       <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0" />
