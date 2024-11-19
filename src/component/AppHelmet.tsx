@@ -28,8 +28,8 @@ function AppHelmet() {
         name="twitter:description"
         content="Discover Swaz's creative web development projects and get inspired!"
       />
-      <meta name="twitter:image" content="https://portfoliome-pied.vercel.app/twitter-image.jpg" />
-      <meta name="twitter:creator" content="@yourTwitterHandle" />
+      <meta name="twitter:image" content="https://portfoliome-pied.vercel.app/ogp.png" />
+      <meta name="twitter:creator" content="@" />
 
       {/* Mobile Optimization */}
       <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0" />
