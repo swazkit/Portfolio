@@ -5,6 +5,7 @@ import Tenzies from './assets/Tenzies.png'
 import Bubble from "./assets/Bubble.io.png"
 import { FaDribbble } from "react-icons/fa";
 import { FaBehanceSquare } from "react-icons/fa";
+import AppHelmet from './component/AppHelmet.tsx';
 
 
 interface CustomStyleType {
@@ -14,6 +15,7 @@ interface CustomStyleType {
 function App() {
   return (
     <>
+      <AppHelmet />
       <nav className="Navbar">
         <div className="top-bar">
           <h2 className="text-2xl logo"><a href="#">Portfo<span>lio</span></a></h2>
