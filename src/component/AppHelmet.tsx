@@ -18,7 +18,7 @@ function AppHelmet() {
         property="og:description"
         content="Explore Swaz's web development and design projects. Contact for collaborations!"
       />
-      <meta property="og:image" content="https://portfoliome-pied.vercel.app/src/assets/Thumbnail.png" />
+      <meta property="og:image" content="https://portfoliome-pied.vercel.app/ogp.png" />
       <meta property="og:type" content="website" />
 
       {/* Twitter Metadata */}
